@@ -1,0 +1,19 @@
+nav{height: 70px; justify-content: space-around !important;}
+
+.logo{
+    width: 30px; height: 30px;
+    display: block;
+    background: url('../../../../public/logo-white.svg') center/contain no-repeat;
+}
+
+.hamburger-menu{display: none; border: none; background: none;}
+nav .items a{margin-inline: 15px;}
+
+
+
+/*** RESPONSIVE ***/
+
+@media screen and (max-width: 480px){
+    .hamburger-menu{display: block;}
+    nav .items{display: none;}
+}

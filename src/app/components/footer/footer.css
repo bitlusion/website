@@ -1,0 +1,29 @@
+footer{height: 300px;}
+
+.upper{width: 85vw; justify-content: space-between;}
+.upper *{font-size: 0.9em;}
+.upper .items a{margin: 0 15px 0 0;}
+button{border: none; background: none; color: var(--light-gray);}
+button:hover{color: white; transition: .25s;}
+
+hr{width: 85vw; color: var(--light-gray); margin: 10px 0;}
+
+.bottom{width: 85vw; justify-content: space-between;}
+.bottom p{margin-right: 15px; color: var(--light-gray); font-size: 0.9em; text-align: center;}
+
+.icon{display: inline-block;}
+.social-icons{margin: 5px;}
+.social-icons .icon{margin: 2px; transition: .25s;}
+.social-icons .icon:hover{scale: 1.1; transition: .25s;}
+
+
+
+/*** RESPONSIVE ***/
+
+@media screen and (max-width: 480px){
+    .upper{flex-direction: column;}
+    .bottom{justify-content: center !important;}
+    .items{display: flex; flex-direction: column;}
+    .items a{text-align: right; margin: 5px 15px !important;}
+    button{display: flex; justify-content: flex-end; margin: 5px 15px;}
+}
