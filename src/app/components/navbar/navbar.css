@@ -1,4 +1,11 @@
-nav{height: 70px; justify-content: space-around !important;}
+nav{
+    width: 100vw; height: 70px;
+    position: fixed; top: 0;
+    justify-content: space-around !important;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
 
 .logo{
     width: 30px; height: 30px;

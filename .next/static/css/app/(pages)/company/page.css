@@ -1,0 +1,139 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/(pages)/company/page.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.hero{padding: 5vw;}
+
+.hero h1{
+    font-size: 4.5em;
+    font-weight: normal;
+    text-align: center;
+    margin: 15px;
+}
+
+.hero p{
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    color: var(--light-gray);
+    max-width: 65%;
+}
+
+.cover{
+    width: calc(100vw - 50px); height: calc(100vh - 50px);
+    background: url('/images/company.jpg') center/cover no-repeat;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.cards-container{margin: 50px;}
+.card{
+    width: 80%; height: 50vh;
+    border-radius: 15px;
+    background: #0F0F0F;
+    margin: 25px 0;
+}
+
+.card:last-child{height: 250px; box-shadow: inset 0 0 30px #0FA47F75; background: none;}
+.card:last-child h3{font-weight: normal; text-align: center;}
+.card:last-child button{
+    margin: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    color: var(--black);
+    background: white;
+    transition: .25s;
+}
+.card:last-child button:hover{scale: 1.1; transition: .25s;}
+
+
+.left, .image{width: 50%; height: 100%;}
+.left{padding: 50px; align-items: flex-start; flex-wrap: nowrap;}
+.left *{margin: 15px 0;}
+.left h2{font-size: 2em; font-weight: 600;}
+.left p{font-size: 0.9em; color: var(--light-gray);}
+
+.image{background: url('/images/vision.png') center/cover no-repeat; border-radius: 0 15px 15px 0;}
+
+.cta:hover{transform: translateY(-3px);}
+.cta:hover{color: var(--light-gray);}
+.cta .icon{margin: 10px;}
+
+
+
+/*** RESPONSIVE ***/
+
+@media screen and (max-width: 768px){
+    .card{width: 100%; height: 50vh; flex-direction: column !important;}
+}
+
+@media screen and (max-width: 480px){
+    .hero h1{font-size: 3em;}
+    .hero p{max-width: 85%; font-size: 0.9em;}
+
+    .cards-container{margin: 25px;}
+    .card{height: 80vh;}
+    .left, .image{width: 100%; height: 50%;}
+    .image{border-radius: 0 0 15px 15px;}
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/footer/footer.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+footer{height: 300px;}
+
+.upper{width: 85vw; justify-content: space-between;}
+.upper *{font-size: 0.9em;}
+.upper .items a{margin: 0 15px 0 0;}
+button{border: none; background: none; color: var(--light-gray); transition: .25s;}
+button:hover{color: white; transition: .25s;}
+
+hr{width: 85vw; color: var(--light-gray); margin: 10px 0;}
+
+.bottom{width: 85vw; justify-content: space-between;}
+.bottom p{margin-right: 15px; color: var(--light-gray); font-size: 0.9em; text-align: center;}
+
+.icon{display: inline-block;}
+.social-icons{margin: 5px;}
+.social-icons .icon{margin: 2px; transition: .25s;}
+.social-icons .icon:hover{scale: 1.1; transition: .25s;}
+
+
+
+/*** RESPONSIVE ***/
+
+@media screen and (max-width: 480px){
+    .upper{flex-direction: column;}
+    .bottom{justify-content: center !important;}
+    .items{display: flex; flex-direction: column;}
+    .items a{text-align: right; margin: 5px 15px !important;}
+    button{display: flex; justify-content: flex-end; margin: 5px 15px;}
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/navbar/navbar.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+nav{
+    width: 100vw; height: 70px;
+    position: fixed; top: 0;
+    justify-content: space-around !important;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+.logo{
+    width: 30px; height: 30px;
+    display: block;
+    background: url(/_next/static/media/logo-white.f6014185.svg) center/contain no-repeat;
+}
+
+.hamburger-menu{display: none; border: none; background: none;}
+nav .items a{margin-inline: 15px;}
+
+
+
+/*** RESPONSIVE ***/
+
+@media screen and (max-width: 480px){
+    .hamburger-menu{display: block;}
+    nav .items{display: none;}
+}

@@ -21,7 +21,7 @@ export default function Navbar() {
     return(
         <nav className="center-flex">
             <button className="hamburger-menu"> <Image className="icon" src="/icons/hamburger-menu-white.svg" alt="Hamburger Menu" width={30} height={30} /> </button>
-            <span className="logo"></span>
+            <Link className="logo" href={"/"}></Link>
 
             <div className="items">
                 { items.map((item, index) => ( <Link href={item.link} key={index} className="">{item.name}</Link> )) }
