@@ -3,7 +3,7 @@ footer{height: 300px;}
 .upper{width: 85vw; justify-content: space-between;}
 .upper *{font-size: 0.9em;}
 .upper .items a{margin: 0 15px 0 0;}
-button{border: none; background: none; color: var(--light-gray);}
+button{border: none; background: none; color: var(--light-gray); transition: .25s;}
 button:hover{color: white; transition: .25s;}
 
 hr{width: 85vw; color: var(--light-gray); margin: 10px 0;}

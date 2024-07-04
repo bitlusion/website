@@ -9,7 +9,7 @@ export const items = [
     },
     {
         name: 'Products',
-        link: '/test'
+        link: '/products'
     },
     {
         name: 'About',

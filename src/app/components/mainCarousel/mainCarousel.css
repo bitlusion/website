@@ -4,7 +4,7 @@
 
 .carousel{
     width: calc(100vw - 50px); height: calc(100vh - 120px);
-    background: url('/cover.jpg') center/cover no-repeat;
+    background: url('/images/cover.jpg') center/cover no-repeat;
     border-radius: 10px;
 }
 
@@ -16,5 +16,6 @@
     border-radius: 20px;
     color: var(--black);
     background: white;
+    transition: .25s;
 }
-.carousel button:hover{scale: 1.1;}
+.carousel button:hover{scale: 1.1; transition: .25s;}

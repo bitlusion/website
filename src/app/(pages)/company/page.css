@@ -1,0 +1,75 @@
+.hero{padding: 5vw;}
+
+.hero h1{
+    font-size: 4.5em;
+    font-weight: normal;
+    text-align: center;
+    margin: 15px;
+}
+
+.hero p{
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    color: var(--light-gray);
+    max-width: 65%;
+}
+
+.cover{
+    width: calc(100vw - 50px); height: calc(100vh - 50px);
+    background: url('/images/company.jpg') center/cover no-repeat;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.cards-container{margin: 50px;}
+.card{
+    width: 80%; height: 50vh;
+    border-radius: 15px;
+    background: #0F0F0F;
+    margin: 25px 0;
+}
+
+.card:last-child{height: 250px; box-shadow: inset 0 0 30px #0FA47F75; background: none;}
+.card:last-child h3{font-weight: normal; text-align: center;}
+.card:last-child button{
+    margin: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    color: var(--black);
+    background: white;
+    transition: .25s;
+}
+.card:last-child button:hover{scale: 1.1; transition: .25s;}
+
+
+.left, .image{width: 50%; height: 100%;}
+.left{padding: 50px; align-items: flex-start; flex-wrap: nowrap;}
+.left *{margin: 15px 0;}
+.left h2{font-size: 2em; font-weight: 600;}
+.left p{font-size: 0.9em; color: var(--light-gray);}
+
+.image{background: url('/images/vision.png') center/cover no-repeat; border-radius: 0 15px 15px 0;}
+
+.cta:hover{transform: translateY(-3px);}
+.cta:hover{color: var(--light-gray);}
+.cta .icon{margin: 10px;}
+
+
+
+/*** RESPONSIVE ***/
+
+@media screen and (max-width: 768px){
+    .card{width: 100%; height: 50vh; flex-direction: column !important;}
+}
+
+@media screen and (max-width: 480px){
+    .hero h1{font-size: 3em;}
+    .hero p{max-width: 85%; font-size: 0.9em;}
+
+    .cards-container{margin: 25px;}
+    .card{height: 80vh;}
+    .left, .image{width: 100%; height: 50%;}
+    .image{border-radius: 0 0 15px 15px;}
+}
